@@ -1,112 +1,69 @@
-# Git Conflict Resolution Lab
+Git Conflict Resolution Lab
+Objective
 
-A hands-on project demonstrating Git branching, merge conflicts, conflict resolution, and GitHub integration.
+The objective of this hands-on lab is to understand and implement Git merge conflict resolution. This project demonstrates how multiple developers can work on the same file in different branches, resulting in a merge conflict, and how the conflict can be resolved successfully using Git.
 
----
+Prerequisites
+Git installed on the system
+Git Bash
+GitHub account
+Visual Studio Code or any text editor
+Project Description
 
-## 📌 Objective
+This project demonstrates the process of creating a Git repository, working with multiple branches, making changes to the same file in different branches, creating a merge conflict, resolving the conflict, and finally uploading the project to GitHub.
 
-This lab demonstrates how to:
-
-- Create and manage Git branches
-- Modify the same file in different branches
-- Generate a merge conflict
-- Resolve the merge conflict
-- Use `.gitignore`
-- Push the project to GitHub
-
----
-
-## 🛠️ Tools Used
-
-- Git
-- Git Bash
-- GitHub
-- Visual Studio Code
-
----
-
-## 📁 Project Structure
-
-```
-Git-Conflict-Resolution-Lab/
-│── hello.xml
-│── readme.txt
-│── .gitignore
-│── README.md
-```
-
----
-
-## 🚀 Workflow
-
-1. Initialized a Git repository.
-2. Created the initial commit.
-3. Created a branch named `GitWork`.
-4. Added `hello.xml` in the branch.
-5. Switched to the `master` branch.
-6. Added different content to `hello.xml`.
-7. Compared both branches.
-8. Merged `GitWork` into `master`.
-9. Resolved the merge conflict.
-10. Added `.gitignore`.
-11. Deleted the merged branch.
-12. Renamed the branch to `main`.
-13. Pushed the project to GitHub.
-
----
-
-## 💻 Git Commands Used
-
-```bash
+Steps Performed
+Initialized a new Git repository.
+Created and committed the initial project files.
+Created a new branch named GitWork.
+Added a file named hello.xml in the GitWork branch.
+Modified the file and committed the changes.
+Switched back to the master branch.
+Added the same file with different content.
+Committed the changes to the master branch.
+Compared the differences between the branches.
+Merged the GitWork branch into the master branch.
+Resolved the merge conflict manually.
+Committed the resolved merge.
+Added a .gitignore file.
+Deleted the merged branch.
+Renamed the branch from master to main.
+Uploaded the project to GitHub.
+Git Commands Used
 git init
 git status
-git add .
-git commit -m "Initial commit"
+git add
+git commit
+git checkout
+git branch
+git merge
+git diff
+git log
+git remote add origin
+git push
+Project Files
+README.md – Project documentation
+readme.txt – Initial project file
+hello.xml – File used to create and resolve merge conflicts
+.gitignore – Ignores unnecessary backup files
+Learning Outcomes
 
-git checkout -b GitWork
+After completing this lab, I learned how to:
 
-git checkout master
+Initialize a Git repository.
+Create and manage branches.
+Commit changes using Git.
+Compare differences between branches.
+Create merge conflicts.
+Resolve merge conflicts successfully.
+Use the .gitignore file.
+Push a local project to GitHub.
+Conclusion
 
-git diff master GitWork
+This hands-on lab provided practical experience in working with Git branches and resolving merge conflicts. It improved my understanding of version control, collaboration using Git, and maintaining project history effectively. The project was successfully uploaded to GitHub after completing all the required tasks.
 
-git merge GitWork
+Author
 
-git add hello.xml
-git commit -m "Resolved merge conflict"
-
-git branch -d GitWork
-
-git branch -M main
-
-git remote add origin https://github.com/harini106/Git-Conflict-Resolution-Lab.git
-
-git push -u origin main
-```
-
----
-
-## 📂 Files
-
-- `hello.xml`
-- `readme.txt`
-- `.gitignore`
-- `README.md`
-
----
-
-## ✅ Learning Outcome
-
-- Learned Git branching.
-- Understood merge conflicts.
-- Resolved merge conflicts successfully.
-- Used `.gitignore`.
-- Uploaded a project to GitHub.
-
----
-
-## 👩‍💻 Author
-
-**T Harini**
+Name: T Harini
 
 GitHub: https://github.com/harini106
